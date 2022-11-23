@@ -1,0 +1,18 @@
+ 	指定宽高 颜色
+    transition-property: background-color;
+	指定鼠标进过显示的时间
+    transition-duration: 1s ,1s;
+
+// css 动画 心动的动的过程
+animation: scaleact .8s linear alternate infinite;
+
+//css 动画
+ transition: all .5s ease-in-out;
+// 使用例子
+.BorderBox10 {
+    transition: all .5s ease-in-out !important;
+}
+.BorderBox10:hover {
+  margin-top: -10px;
+  box-shadow: 1px 1px 10px 5px #fff;
+}

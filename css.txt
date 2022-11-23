@@ -1,0 +1,105 @@
+//html占位符
+&nbsp;
+// >符号
+&gt;
+
+//不被元素挤压
+flex-shrink: 0;
+ //调整文字两端对齐
+text-align: justify;
+
+//调整 文字 中的 \n 可以换行
+white-space: pre-line;
+
+//css一行多出  流动自动换行
+display: flex;
+flex-flow: row wrap;
+// 一行放两个
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+
+//图片变形 img标签使用
+object-fit: cover;
+
+  // image 使用  mode="aspectFill" 属性有好几个值
+  // 盒子变形使用  box-sizing: border-box;
+
+// 背景 颜色 渐变过程  background-image: linear-gradient(to right,red,blue);
+background: linear-gradient(to bottom,#fff,#6176F4);
+
+//字体渐变色
+color: transparent;
+-webkit-background-clip: text;
+background: linear-gradient(to bottom,#fff,#6176F4);
+
+// 照片模糊拼接
++ '?imageView&blur=40x20'
+
+flex布局
+display: flex;
+**居中显示
+justify-content: center;
+
+//鼠标小手图标
+cursor: pointer;
+
+//选择最后一个元素
+:first-of-type 第一个
+:last-child 最后一个
+
+	**转换纵列
+flex-direction: column;
+
+//*** 偏移自身 让目标居中 图片移动 鼠标在图片居中位置
+ transform: translate(-50%,-50%);
+
+/* 局部 滚动条样式设置  那个页面滚动给那个页面加 &::... ！
+height: 100vh;
+overflow-y: auto;
+&::-webkit-scrollbar {
+  display: none;
+} */
+
+/* 滚动条样式设置   */
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: rgb(250, 248, 248);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(165, 165, 165, 0.5);
+  border-radius: 10px;
+}
+
+多行文本溢出显示省略号(...)
+overflow : hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+
+单行文本溢出显示省略号(...)
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+**或者这个
+   display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-emphasis: none;
+
+--------------------------------------
+<view class="aaa"></view>
+	.aaa::before {
+		content: '';
+		position: absolute;
+		width: 70%;
+		height: 1px;
+		top: 65%;
+		background-color: #eee;
+		left: 100rpx;
+		
+		z-index: 999;
+	}
+------------------------------------------
