@@ -5,6 +5,32 @@
 
 // css 动画 心动的动的过程
 animation: scaleact .8s linear alternate infinite;
+//css 自动动画
+  .load {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #008489;
+    margin: 0 4px;
+    border-radius: 50%;
+    animation: loading 1s linear infinite;
+  }
+ @keyframes loading {
+    0% {
+      transform: scale(0.3);
+      opacity: 0;
+    }
+
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(0.3);
+      opacity: 0;
+    }
+  }
 
 //css 动画
  transition: all .5s ease-in-out;
