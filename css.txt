@@ -1,10 +1,12 @@
 //html占位符
 &nbsp;
+
 // >符号
 &gt;
 
 //不被元素挤压
 flex-shrink: 0;
+
  //调整文字两端对齐
 text-align: justify;
 
@@ -14,10 +16,20 @@ white-space: pre-line;
 //css一行多出  流动自动换行
 display: flex;
 flex-flow: row wrap;
+
 // 一行放两个
         display: grid;
         grid-template-columns: 50% 50%;
         width: 100%;
+	
+// position: sticky; 粘贴 粘性定位 基于用户的滚动位置来定位 一层包裹
+.sticky {
+    position: -webkit-sticky; /* Safari */ 注意: Internet Explorer, Edge 15 及更早 IE 版本不支持 sticky 定位。 Safari 需要使用 -webkit- prefix 。
+    position: sticky;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
+}
 
 //图片变形 img标签使用
 object-fit: cover;
