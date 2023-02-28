@@ -10,6 +10,9 @@ flex-shrink: 0;
  //调整文字两端对齐
 text-align: justify;
 
+// 文字不可选中
+user-select: none;
+
 //调整 文字 中的 \n 可以换行
 white-space: pre-line;
 
