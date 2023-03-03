@@ -10,6 +10,10 @@ flex-shrink: 0;
  //调整文字两端对齐
 text-align: justify;
 
+//文字下划线 调整下划线距离
+ text-decoration: underline;
+ text-underline-offset: 5px;
+
 // 文字不可选中
 user-select: none;
 
