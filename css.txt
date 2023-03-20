@@ -67,6 +67,9 @@ cursor: pointer;
 :first-of-type 第一个
 :last-child 最后一个
 
+:nth-child(1) 选择第一个
+:nth-last-child(2) 倒数第二个
+
 	**转换纵列
 flex-direction: column;
 
