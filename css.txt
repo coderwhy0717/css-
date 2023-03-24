@@ -1,8 +1,8 @@
 //html占位符
 &nbsp;
 
-// >符号
-&gt;
+// >符号 <符号
+&gt;  &lt;
 
 //不被元素挤压
 flex-shrink: 0;
