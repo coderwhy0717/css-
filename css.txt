@@ -74,7 +74,10 @@ cursor: pointer;
 
 	**转换纵列
 flex-direction: column;
-
+// 偏移 移动
+ConentRef.current.style.transform = `translateY(${-100}px)`
+// css 的偏移 移动
+transform：translateY(-100px);
 //*** 偏移自身 让目标居中 图片移动 鼠标在图片居中位置
  transform: translate(-50%,-50%);
 
