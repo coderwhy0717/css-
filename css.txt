@@ -26,6 +26,9 @@ white-space: pre-line;
 display: flex;
 flex-flow: row wrap;
 
+// 瀑布流
+align-items: flex-start;
+
 // 一行放两个
         display: grid;
         grid-template-columns: 50% 50%;
