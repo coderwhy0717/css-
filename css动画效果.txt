@@ -1,4 +1,10 @@
- 	指定宽高 颜色
+// 1.简单动画效果 react里 open开关显示不显示true false
+transform: ${(props) =>
+        props.open ? 'translateY(0%)' : 'translateY(100%)'};
+      transition: all 0.5s ease-in-out;
+// 2.vue里可以两套css 使用动态:class 改变名字值
+
+指定宽高 颜色
     transition-property: background-color;
 	指定鼠标进过显示的时间
     transition-duration: 1s ,1s;
