@@ -4,6 +4,24 @@ transform: ${(props) =>
       transition: all 0.5s ease-in-out;
 // 2.vue里可以两套css 使用动态:class 改变名字值
 
+
+// 3. 简单动画旋转 控制变量执行 react里 
+// 3.1 vue里可以使用 行内样式 style={animation-play-state: ... ;} 控制
+.yid-music-img {
+        animation: musicImg 16s linear infinite;
+        animation-play-state: ${(props) => (props.anim ? 'running' : 'paused')};
+      }
+      /* 动画 */
+      @keyframes musicImg {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
+//-----------------------------------------
 指定宽高 颜色
     transition-property: background-color;
 	指定鼠标进过显示的时间
