@@ -21,9 +21,13 @@ transform: ${(props) =>
       @keyframes musicImg {
         from {
           transform: rotate(0deg);
+           /* margin-left: 100%; */
+
         }
         to {
           transform: rotate(360deg);
+           /*  margin-left: -100%; */
+
         }
       }
     }
