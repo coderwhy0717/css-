@@ -7,6 +7,12 @@ transform: ${(props) =>
 
 // 3. 简单动画旋转 控制变量执行 react里 
 // 3.1 vue里可以使用 行内样式 style={animation-play-state: ... ;} 控制
+ animation: 10s  linear  2s  infinite  musicImg;
+	    动画时间 10s
+	    直线式linear
+	    动画延迟 2s 执行
+	    循环 infinite
+	    怎么样动画执行的名字
 .yid-music-img {
         animation: musicImg 16s linear infinite;
         animation-play-state: ${(props) => (props.anim ? 'running' : 'paused')};
