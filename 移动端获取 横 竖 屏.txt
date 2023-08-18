@@ -32,4 +32,5 @@ window.addEventListener("resize", ()=>{
     })
 
     ob.observe(app)
+    // 最后别忘记取消监听
   })
