@@ -18,3 +18,17 @@ window.addEventListener("resize", ()=>{
 @media screen and (orientation: landscape) {
   /*横屏...*/
 }
+//  react 检测组件尺寸 
+const lyConentRef = useRef()
+  useEffect(() => {
+      const ob = new ResizeObserver((en) => {
+        for (const entry of en) {
+          console.log(entry, 'en')
+          console.log(entry.borderBoxSize[0].inlineSize, '宽')
+          console.log(entry.borderBoxSize[0].blockSize, '高')
+            调用函数去做事情
+        }
+      })
+      console.dir(lyConentRef.current, '组件')
+      ob.observe(lyConentRef.current)
+  }, [lyConentRef])
