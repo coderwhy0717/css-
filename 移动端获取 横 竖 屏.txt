@@ -18,7 +18,7 @@ window.addEventListener("resize", ()=>{
 @media screen and (orientation: landscape) {
   /*横屏...*/
 }
-//  react 检测组件尺寸 
+//  react 检测组件尺寸  dy里面的搜 封装resize指令
 const lyConentRef = useRef()
   useEffect(() => {
       const ob = new ResizeObserver((en) => {
