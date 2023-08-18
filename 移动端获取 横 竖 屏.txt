@@ -19,7 +19,7 @@ window.addEventListener("resize", ()=>{
   /*横屏...*/
 }
 
-// react 检测组件尺寸 写在 app.js文件里  dy里面的搜 封装resize指令
+// react 检测组件尺寸 写在 app.js文件里   dy里面的搜 封装resize指令
  const app = document.getElementById('root')
 
   useEffect(() => {
