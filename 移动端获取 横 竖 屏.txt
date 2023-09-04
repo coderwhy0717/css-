@@ -21,7 +21,7 @@ window.addEventListener("resize", ()=>{
 
 // react 检测组件尺寸 写在 app.js文件里  vue类似监听变化 封装指令 去看 dy里面的搜  封装resize指令
  const app = document.getElementById('root')
-
+    // app 不一定是root 也可以是某一个ref组件 元素 监听他的变化
   useEffect(() => {
     const ob = new ResizeObserver((en) => {
       for (const entry of en) {
