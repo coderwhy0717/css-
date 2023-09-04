@@ -11,6 +11,13 @@
 //不被元素挤压
 flex-shrink: 0;
 
+// 
+ letter-spacing: -12px;  // 文字叠在一起
+ filter: blur(.5px); // 模糊 配合父元素使用
+父元素上
+filter: contrast(2); // 黑的越黑 白的越白 背景是黑色的 文字是白色的
+// 
+
  //调整文字两端对齐
 text-align: justify;
 
