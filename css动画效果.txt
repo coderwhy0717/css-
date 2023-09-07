@@ -31,6 +31,35 @@ transform: ${(props) =>
         }
       }
     }
+//------文字渐变动画------------------------
+ 	<i>l</i>
+        <i>o</i>
+        <i>g</i>
+        <i>o</i>
+i {
+        font-weight: 600;
+        cursor: pointer;
+        animation: spread 1.5s ease-in-out infinite alternate;
+      }
+// 每一个定时间
+      i:nth-child(1) {
+        animation-delay: (1 - 1) * 0.2s;
+      }
+      i:nth-child(2) {
+        animation-delay: (2 - 1) * 0.2s;
+      }
+      i:nth-child(3) {
+        animation-delay: (3 - 1) * 0.2s;
+      }
+      i:nth-child(4) {
+        animation-delay: (4 - 1) * 0.2s;
+      }
+  @keyframes spread {
+    to {
+      color: red;
+      text-shadow: 20px 0 70px red;
+    }
+  }
 //-----------------------------------------
 指定宽高 颜色
     transition-property: background-color;
