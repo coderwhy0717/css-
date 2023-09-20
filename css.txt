@@ -4,7 +4,11 @@
   
 //html占位符
 &nbsp;
- 
+ // 穿透
+ ::v-deep(.el-tabs__header) {
+            height: 49px;
+        }
+
 // >符号 <符号
 &gt;  &lt;
 
